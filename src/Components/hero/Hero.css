@@ -1,0 +1,44 @@
+.hero-container{
+    display:flex;
+    margin-top: 60px;
+}
+
+.hero-img{
+    flex: 40%;
+    display: flex;
+}
+.hero-text{
+    flex: 60%;
+    
+}
+.hero-text h1{
+    padding: auto;
+}
+
+.text{
+    width: 90%;
+    margin: auto;
+    text-align: center ;
+    
+}
+
+.text h1,p{
+    color: white;
+}
+
+.heroimgtag{
+    width: 60%;
+    
+    border-radius: 20px;
+    
+    margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .hero-container{
+       flex-direction: column;
+    }
+    .heroimgtag{
+        width:85%;
+    }
+  }

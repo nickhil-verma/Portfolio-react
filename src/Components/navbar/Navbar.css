@@ -16,6 +16,7 @@
   }
   .logoImg{
     width: 60px;
+    height: 60px;
     border-radius: 50%;
   }
 
@@ -85,3 +86,17 @@
     align-items: end;
     justify-content: end;
   }
+
+  .logo{
+    display: flex;
+    
+  }
+  .logo:hover{
+    cursor: pointer;
+  }
+
+  .logolink{
+    color: white;
+    margin-left: 12px;
+  }
+

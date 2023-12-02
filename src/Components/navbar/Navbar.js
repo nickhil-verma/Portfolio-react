@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav>
       <div className="container">
         <div className="logo">
-          <img className='logoImg' src={Logo}></img>
+          <img className='logoImg' src={Logo}></img><h1><a className='logolink' >Nikhil Verma.</a></h1>
         </div>
         <div className="mobile-menu-toggle" onClick={handleButtonClick}>
             ☰
@@ -21,11 +21,11 @@ const Navbar = () => {
             <div className='btnholder'> <button className="closebtn"onClick={handleButtonClick}>X</button></div>
            <ul className='mobul'>    
                     <li>
-                        <a className='navLinks-mobile' href=''>About</a>
+                        <a className='navLinks-mobile' href='/About'>About</a>
                     </li>
                     
                     <li>
-                        <a className='navLinks-mobile' href=''>skills</a>
+                        <a className='navLinks-mobile' href='/Skills'>skills</a>
                     </li>
                     <li>
                         <a className='navLinks-mobile' href=''>Projects</a>
@@ -45,11 +45,11 @@ const Navbar = () => {
             
                 <ul>    
                     <li>
-                        <a className='navLinks' href=''>About</a>
+                        <a className='navLinks' href='/About'>About</a>
                     </li>
                     
                     <li>
-                        <a className='navLinks' href=''>skills</a>
+                        <a className='navLinks' href='/Skills'>skills</a>
                     </li>
                     <li>
                         <a className='navLinks' href=''>Projects</a>
@@ -63,6 +63,7 @@ const Navbar = () => {
                 </ul>
             </div>
       </div>
+      
     </nav>
   );
 };
