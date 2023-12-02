@@ -3,16 +3,19 @@
     display: flex;
     justify-content: end;
     align-items: end;
+    background-color: transparent;
   }
   .container{
     display: flex;
     margin: 2.5rem;
     justify-content: space-between;
     align-items: center;
-    
+    margin-bottom: 0;
+    background-color: transparent;
   }
   .menu li {
     margin-right: 20px;
+    background-color: transparent;
   }
   .logoImg{
     width: 60px;
@@ -22,12 +25,15 @@
 
   .navLinks{
     text-decoration: none;
+    font-size: 1.2rem;
+    background-color: transparent;
     
   }
 
   .navLinks:hover{
     color: white;
     transition: 0.25s;
+    cursor: pointer;
   }
 
 
@@ -89,6 +95,7 @@
 
   .logo{
     display: flex;
+    background-color: transparent;
     
   }
   .logo:hover{
@@ -99,4 +106,26 @@
     color: white;
     margin-left: 12px;
   }
+nav{
+    position: fixed;
+    width: 100%;
+    padding-bottom: 0;
+    
+}
+.divider{
+    border: solid .5px rgba(128, 128, 128, 0.637);
+    width: 95%;
+    margin: auto;
+}
 
+nav {
+    padding: 10px;
+    padding-bottom: 0;
+    z-index: 10;
+    background: rgba(182, 182, 182, 0); /* Adjust the opacity as needed */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */  }
+  
+
+  .menu,.logolink,h1{
+    background-color: transparent;
+  }

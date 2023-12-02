@@ -1,0 +1,82 @@
+#skills-logo{
+   border-radius: 50%;
+   margin: auto;
+   width: 60px;
+   height: 60px;
+   padding: 0;
+}
+#skills{
+    margin-top: 70px;
+}
+.imgholder{
+    display: flex;
+    width: 90%;
+    margin:50px;
+    overflow: hidden;
+}
+.skillsheading{
+    color: white;
+    letter-spacing: 15px;
+    justify-content: center;align-items: center;
+    text-align: center;
+}
+.imgcontainer{
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+.imgcontainer:hover{
+    scale: 1.05;
+    transition: .2s;
+    cursor: pointer;
+    background-color: grey;
+}
+
+.imgcontainer p,h3{
+    background-color: transparent;
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.progressbar{
+    border: 2px solid greenyellow;
+    border-radius: 2px;
+    
+}
+.html,.git{
+    width:80%;
+}
+.js{
+    width: 50%;
+    border-color: orange;
+}.docker{border-color:red;width: 35%;}.node{border-color: red;width: 30%;}.pr{width:70%;border-color: rgb(255, 225, 0);}.mongodb{width: 10%;border-color: red;}.python{width: 60%;border-color: rgb(255, 251, 0);}
+.css,.react{
+    width: 78%;
+}
+
+.barholder{
+    /* border: 2px solid grey; */
+    background-color: rgb(209, 209, 209);
+    border-radius: 2px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .imgholder{
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+.subheading-skills{
+    text-align: center;
+    color: rgb(202, 202, 202);
+    font-size: .8rem;
+    letter-spacing: 4px;
+}
