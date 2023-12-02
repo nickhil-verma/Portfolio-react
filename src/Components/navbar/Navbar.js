@@ -6,23 +6,28 @@ import Logo from "../../img/84511.png";
 
 const Navbar = () => {
   
+    // const [isPopupVisible, setPopupVisible] = useState(false);
+
+    // const handleButtonClick = () => {
+    //   setPopupVisible(!isPopupVisible);
+    // };
     const [isPopupVisible, setPopupVisible] = useState(false);
 
     const handleButtonClick = () => {
-      setPopupVisible(!isPopupVisible);
+      setPopupVisible(true);
+    };
+  
+    const closePopup = () => {
+      setPopupVisible(false);
     };
   return (
-    <nav>
-      <div className="container">
-        <div className="logo">
-          <img className='logoImg' src={Logo}></img><h1><a className='logolink' >Nikhil Verma.</a></h1>
-        </div>
-        <div className="mobile-menu-toggle" onClick={handleButtonClick}>
-            ☰
-            {isPopupVisible && (
-        <div className="popup">
-            <div className='btnholder'> <button className="closebtn"onClick={handleButtonClick}>X</button></div>
-           <ul className='mobul'>    
+    <nav> <div>
+    
+
+    {isPopupVisible && (
+      <div className="popup">
+        <span className="closebtn" onClick={closePopup}>&times;</span>
+        <ul className='mobul'>    
                     <li>
                         <ScrollLink  to="About" smooth={true} duration={100} offset={-150} className='navLinks-mobile' >About</ScrollLink>
                     </li>
@@ -40,6 +45,20 @@ const Navbar = () => {
                         <ScrollLink to="about" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >contact</ScrollLink>
                     </li>
                 </ul>
+      </div>
+    )}
+  </div>
+        <div className='navbar'>
+      <div className="container">
+        <div className="logo">
+          <img className='logoImg' src={Logo}></img><h1><a className='logolink' >Nikhil Verma.</a></h1>
+        </div>
+        <div className="mobile-menu-toggle" onClick={handleButtonClick}>
+            ☰
+            {isPopupVisible && (
+        <div className="popup">
+            <div className='btnholder'> <button className="closebtn"onClick={handleButtonClick}>X</button></div>
+           
          
         </div>
       )}
@@ -67,7 +86,7 @@ const Navbar = () => {
             </div>
       </div>
       <div className='divider'> </div>
-     
+      </div>
     </nav>
   );
 };
