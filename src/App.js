@@ -10,7 +10,7 @@ function App() {
   const [progress, setProgress] = useState(0)
   return (
     <><Navbar/>
-    
+   
     <Hero/>
     <Skills/>
     <Projects/>

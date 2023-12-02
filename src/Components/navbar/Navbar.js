@@ -50,9 +50,9 @@ const Navbar = () => {
   </div>
         <div className='navbar'>
       <div className="container">
-        <div className="logo">
+        <a href='/' style={{textDecoration:"none",backgroundColor:"transparent"}}><div className="logo">
           <img className='logoImg' src={Logo}></img><h1><a className='logolink' >Nikhil Verma.</a></h1>
-        </div>
+        </div></a>
         <div className="mobile-menu-toggle" onClick={handleButtonClick}>
             ☰
             {isPopupVisible && (
