@@ -1,0 +1,87 @@
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .container{
+    display: flex;
+    margin: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .menu li {
+    margin-right: 20px;
+  }
+  .logoImg{
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  .navLinks{
+    text-decoration: none;
+    
+  }
+
+  .navLinks:hover{
+    color: white;
+    transition: 0.25s;
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .menu{
+        display: none;
+    }
+  }
+  @media only screen and (min-width: 700px) {
+    .mobile-menu-toggle{
+        display: none;
+    }
+  }
+
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    justify-content: end;
+    align-items: end;
+    height: 100vh;
+    width: 50vh;
+    color: white;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: grey;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+
+  .navLinks-mobile{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+  }
+  .mobul,li{
+    background: transparent;
+    list-style: none;
+  }
+
+  .mobul li{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  
+  .closebtn{
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    
+  }
+  .btnholder{
+    background-color: transparent;
+    align-items: end;
+    justify-content: end;
+  }
