@@ -156,3 +156,23 @@ nav{
     
   }
 
+.navbtn{
+  margin: 0;
+  width: 160px;
+  height: 30px;
+  padding-left: 13px;
+  padding-top: 5px;
+  display: flex;
+  
+  text-align: center;
+ overflow: hidden;
+}
+
+
+
+
+
+
+.navbtn:hover{
+  border: solid .5px grey;
+}

@@ -48,6 +48,9 @@ const Navbar = () => {
                     <li>
                         <ScrollLink to="Contact" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >contact</ScrollLink>
                     </li>
+                    <li>
+                      <a style={{textDecoration:"none"}} href='upi://pay?pa=vermanick75@okhdfcbank&pn=NikhilVerma&mc=1000&cu=INR'><button className='navbtn'>Buy me a coffee☕</button></a>
+                   </li>
                 </ul>
                 <div style={{backgroundColor:"transparent",display:"flex",}}>
                 <a style={{textDecoration:"none",backgroundColor:"transparent"}}href="mailto:vermanick75@gmail.com? subject=Got your email from portfolio">
@@ -96,6 +99,9 @@ const Navbar = () => {
                     <li>
                         <ScrollLink to="Contact" smooth={true} duration={100} offset={-50} className='navLinks' >contact</ScrollLink>
                     </li>
+                    <li>
+                      <a style={{textDecoration:"none"}} href='upi://pay?pa=vermanick75@okhdfcbank&pn=NikhilVerma&mc=1000&cu=INR'><button className='navbtn'>Buy me a coffee☕</button></a>
+                   </li>
                 </ul>
             </div>
       </div>

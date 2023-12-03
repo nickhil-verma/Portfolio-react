@@ -15,6 +15,15 @@
     padding: auto;
 }
 
+.heropara{
+  color: grey;
+  font-weight: 200;
+  font-size: 1rem;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  word-spacing: 2.5px;
+}
 .text{
     width: 90%;
     margin: auto;

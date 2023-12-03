@@ -16,7 +16,8 @@ const Hero = () => {
             
             <TextAnimation/>
             </h1>
-            <p>Welcome! folks 
+            <p className='heropara'>
+              Welcome to my digital space! I am a passionate tech enthusiast deeply immersed in the world of technology. My portfolio is a reflection of my unwavering curiosity and love for innovation. I thrive on challenges, actively participating in hackathons, where I transform ideas into solutions. Committed to the spirit of collaboration, I contribute to open-source projects, believing in the power of shared knowledge. Explore my journey through the realm of code and technology, where creativity meets functionality. Join me on this exciting adventure, as I continue to embrace and contribute to the ever-evolving landscape of the digital world. 
             </p>
             <div className="heo-btnholder">
                 <a href='https://github.com/nickhil-verma'><button className='github'>GitHub</button></a>

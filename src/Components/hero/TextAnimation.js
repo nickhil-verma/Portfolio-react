@@ -5,7 +5,7 @@ import { useTypewriter,Cursor } from 'react-simple-typewriter';
 function TextAnimation (){
   const [text] = useTypewriter({
     words: ['Hola,amigo! kese ho theek ho?','Hy! Welcome to my portfolio.', 'I am a web-developer.', 'I am a open source Contributor.' ],
-    loop:3,
+    loop:Infinity,
     onLoopDone: () => console.log(`loop completed after 3 runs.`)
   })
 

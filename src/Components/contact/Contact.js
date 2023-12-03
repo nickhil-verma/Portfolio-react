@@ -24,10 +24,10 @@ const Contact = () => {
         </div>
         <div className='contact-form'>
             <form>
-                <div className='input holder'><input className='forminput' type='text' placeholder='Name'></input>
-                <input className='forminput' type='email' placeholder='Email@web.com'></input></div>
-                <input  className='forminput'type='text' placeholder='Subject'></input>
-                <textarea type='text' placeholder='Your Message'></textarea>
+                <div className='input holder'><input  required className='forminput' type='text' placeholder='Name'></input>
+                <input  required className='forminput' type='email' placeholder='Email@example.com'></input></div>
+                <input  required  className='forminput'type='text' placeholder='Subject'></input>
+                <textarea  required type='text' placeholder='Your Message'></textarea>
                 <button className='submitbtn'>Submit</button>
             </form>
         </div>
