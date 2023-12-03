@@ -24,7 +24,7 @@ import VSCODE from "../../img/vscode.png";
 const Skills = () => {
   return (
     <div className='skills-section' id='skills'>
-        <h1 className='skillsheading sectionheading'>SKILLS</h1>
+        <h1 className='skillsheading sectionheading'>Skills</h1>
         <p className='subheading-skills'>To be Noted this was updated last in Dec 2023</p>
         <motion.div
         initial={{x:-100, opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.6,duration:0.8}} viewport={{

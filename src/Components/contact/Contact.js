@@ -39,7 +39,7 @@ const Contact = () => {
                     once:true,
                   }}
                 required  className='forminput'type='text' placeholder='Subject'></motion.input>
-                <motion.textarea initial={{y:100, opacity:0}} whileInView={{y:0,opacity:1}} transition={{delay:0.6,duration:0.8}} viewport={{
+                <motion.textarea initial={{y:100, opacity:0}} whileInView={{y:0,opacity:1}} transition={{delay:0.7,duration:0.8}} viewport={{
                     once:true,
                   }}  required type='text' placeholder='Your Message'></motion.textarea>
                 <motion.button initial={{ opacity:0}} whileInView={{opacity:1}} transition={{delay:0.8,duration:0.8}} viewport={{
