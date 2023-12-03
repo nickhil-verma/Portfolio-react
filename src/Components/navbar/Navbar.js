@@ -39,10 +39,10 @@ const Navbar = () => {
                         <ScrollLink  to="projects" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >Projects</ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink to="about" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >Experience</ScrollLink>
+                        <ScrollLink to="Experience" smooth={true} duration={100} offset={-150} className='navLinks-mobile' >Experience</ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink to="about" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >contact</ScrollLink>
+                        <ScrollLink to="Contact" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >contact</ScrollLink>
                     </li>
                 </ul>
       </div>
@@ -77,10 +77,10 @@ const Navbar = () => {
                         <ScrollLink className='navLinks' to="projects" smooth={true} duration={100} offset={-150} >Projects</ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink to="about" smooth={true} duration={100} offset={-50} className='navLinks' >Experience</ScrollLink>
+                        <ScrollLink to="Experience" smooth={true} duration={100} offset={-150} className='navLinks' >Experience</ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink to="about" smooth={true} duration={100} offset={-50} className='navLinks' >contact</ScrollLink>
+                        <ScrollLink to="Contact" smooth={true} duration={100} offset={-50} className='navLinks' >contact</ScrollLink>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,66 @@
+.Expheading{
+    text-align: center;
+}
+
+.experience-card{
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.151);
+    color: black;
+    display: flex;
+    border: solid grey 1px;
+    flex-direction: column;
+}
+    .experience-card:hover{
+    background-color: transparent   ;
+    cursor: pointer;
+    transition: 0.5s;}
+
+.Experience-holder{
+    margin: 30px;
+    width: 40%;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+}
+.experience-card h3{
+    color: white;
+    text-align: center;
+}
+
+.expcontainer{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .expcontainer{
+        flex-direction: column;
+    }
+
+    .Experience-holder{
+        width: 70%;
+    }
+}
+
+.explogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    z-index: 5;
+    }
+
+    .explist{
+        background-color: transparent;
+        
+    }
+    .explist li{
+       
+        color: rgb(209, 209, 209);
+        text-align: start;
+    }
