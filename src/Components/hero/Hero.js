@@ -16,7 +16,7 @@ const Hero = () => {
             
             <TextAnimation/>
             </h1>
-            <p> welcom! to my website so delight full to see u here hjsfdhjsdf sdahsfdhjsdf sfdjhsfdjsfd oijfjlkf fjkfjkfsjk sfdhjsfd fhjsfdjkfd fdhjhjjkf
+            <p>Welcome! folks 
             </p>
             <div className="heo-btnholder">
                 <a href='https://github.com/nickhil-verma'><button className='github'>GitHub</button></a>
