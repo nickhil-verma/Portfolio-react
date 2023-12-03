@@ -1,4 +1,6 @@
 import React from 'react'
+import { IoIosMail } from "react-icons/io";
+
 import "./Contact.css"
 const Contact = () => {
   return (<>
@@ -7,7 +9,7 @@ const Contact = () => {
         
         <div className='contact-txt'>
         <h3>I have got just what you need.<br></br><span id='contact-span'>
-        Lets Talk!</span></h3></div>
+        Lets Talk!</span></h3><IoIosMail className='icon' /><h7 className="icontxt">Vermancik75@gmaail.com</h7></div>
         <div className='contact-form'>
             <form>
                 <div className='input holder'><input className='forminput' type='text' placeholder='Name'></input>

@@ -42,6 +42,8 @@ textarea{
         margin: 2PX;
 }
 .contact-txt{
+    padding-top: 0;
+    margin-top: 0;
     text-align: start;
     justify-content: center;align-items: center;
 }
@@ -77,4 +79,13 @@ textarea:hover{
         
         width: 100%;
     }
+}
+.icon{
+    font-size: 30px;
+    padding-top: 10px;
+}
+.icontxt{
+    font-size: 20px;
+    align-items: center;justify-content: center;    
+    margin-top: 0;
 }
