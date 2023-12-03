@@ -33,25 +33,25 @@ const Navbar = () => {
       <div className="popup">
         <span className="closebtn" onClick={closePopup}>&times;</span>
         <ul className='mobul'>    
-                    <li>
+                    <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.1,duration:0.8}}>
                         <ScrollLink  to="About" smooth={true} duration={100} offset={-150} className='navLinks-mobile' >About</ScrollLink>
-                    </li>
+                    </motion.li>
                     
-                    <li>
+                    <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.2,duration:0.8}}>
                         <ScrollLink to="skills" smooth={true} duration={100} offset={-150} className='navLinks-mobile' >skills</ScrollLink>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.3,duration:0.8}}>
                         <ScrollLink  to="projects" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >Projects</ScrollLink>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.4,duration:0.8}}>
                         <ScrollLink to="Experience" smooth={true} duration={100} offset={-150} className='navLinks-mobile' >Experience</ScrollLink>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.5,duration:0.8}}>
                         <ScrollLink to="Contact" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >contact</ScrollLink>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.6,duration:0.8}}>
                       <a style={{textDecoration:"none"}} href='upi://pay?pa=vermanick75@okhdfcbank&pn=NikhilVerma&mc=1000&cu=INR'><button className='navbtn'>Buy me a coffee☕</button></a>
-                   </li>
+                   </motion.li>
                 </ul>
                 <div style={{backgroundColor:"transparent",display:"flex",}}>
                 <a style={{textDecoration:"none",backgroundColor:"transparent"}}href="mailto:vermanick75@gmail.com? subject=Got your email from portfolio">
