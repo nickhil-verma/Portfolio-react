@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import "./Hero.css";
+import TextAnimation from './TextAnimation';
 import Heroimg from "../../img/heroimg.jpg";
 
 const Hero = () => {
+ 
   return (
     <>
     <div className='hero-container' id='About'>
@@ -10,7 +12,9 @@ const Hero = () => {
         <div className='hero-text'>
             <div className='text'>
             <h1>
-                Hy! welcome to my Portfolio
+              
+            
+            <TextAnimation/>
             </h1>
             <p> welcom! to my website so delight full to see u here hjsfdhjsdf sdahsfdhjsdf sfdjhsfdjsfd oijfjlkf fjkfjkfsjk sfdhjsfd fhjsfdjkfd fdhjhjjkf
             </p>

@@ -81,11 +81,11 @@ textarea:hover{
     }
 }
 .icon{
-    font-size: 30px;
-    padding-top: 10px;
+    font-size: 25px;
+    margin: 10px;
 }
-.icontxt{
-    font-size: 20px;
-    align-items: center;justify-content: center;    
-    margin-top: 0;
+
+.icon:hover{
+    scale: 1.25;
+    transition: 0.5s;
 }
