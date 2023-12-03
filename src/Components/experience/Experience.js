@@ -1,5 +1,6 @@
 import React from 'react';
 import './Experience.css';
+import { motion } from "framer-motion";
 import WEB from "../../img/web.jpeg"
 import Github from "../../img/osc.png"
 const Experience = () => {
@@ -7,7 +8,11 @@ const Experience = () => {
     <>
     <h1 className='Expheading sectionheading' >Experience</h1>
     <div id="Experience"className='expcontainer'>
-    <div className='Experience-holder'>
+    <motion.div
+     initial={{x:-100, opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.4,duration:0.8}} viewport={{
+      once:true,
+    }}
+     className='Experience-holder'>
         <div className='experience-card'>
             <img src={WEB} className='explogo'>
 
@@ -26,8 +31,12 @@ const Experience = () => {
             </ul>
         </div>
         
-    </div>    
-    <div className='Experience-holder'>
+    </motion.div>    
+    <motion.div
+      initial={{x:100, opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.4,duration:0.8}} viewport={{
+        once:true,
+      }}
+    className='Experience-holder'>
         <div className='experience-card'>
             <img src={Github} className='explogo'>
 
@@ -48,7 +57,7 @@ const Experience = () => {
             </ul>
         </div>
         
-    </div>    
+    </motion.div>    
     </div>
     </>
   )

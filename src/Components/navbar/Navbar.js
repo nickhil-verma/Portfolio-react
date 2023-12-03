@@ -70,7 +70,7 @@ const Navbar = () => {
       <div className="container">
         <a href='/' style={{textDecoration:"none",backgroundColor:"transparent"}}><div style={{overflow:"hidden"}} className="logo">
           <img className='logoImg' src={Logo}></img><motion.h1 
-            initial={{y:-250}} animate={{y:0}} transition={{delay:0.2,duration:0.8}}
+            initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.2,duration:0.8}}
           ><a className='logolink' >Nikhil Verma.</a></motion.h1>
         </div></a>
         <div className="mobile-menu-toggle" onClick={handleButtonClick}>

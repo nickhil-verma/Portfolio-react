@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-
+import { motion } from 'framer-motion';
 import "./Contact.css"
 const Contact = () => {
   return (<>
@@ -24,11 +24,27 @@ const Contact = () => {
         </div>
         <div className='contact-form'>
             <form>
-                <div className='input holder'><input  required className='forminput' type='text' placeholder='Name'></input>
-                <input  required className='forminput' type='email' placeholder='Email@example.com'></input></div>
-                <input  required  className='forminput'type='text' placeholder='Subject'></input>
-                <textarea  required type='text' placeholder='Your Message'></textarea>
-                <button className='submitbtn'>Submit</button>
+                <div className='input holder'><motion.input
+                 initial={{x:-100, opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.4,duration:0.8}} viewport={{
+                once:true,
+              }}
+                required className='forminput' type='text' placeholder='Name'></motion.input>
+                <motion.input 
+                 initial={{x:100, opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.4,duration:0.8}} viewport={{
+                once:true,
+              }}
+                 required className='forminput' type='email' placeholder='Email@example.com'></motion.input></div>
+                <motion.input 
+                initial={{y:100, opacity:0}} whileInView={{y:0,opacity:1}} transition={{delay:0.6,duration:0.8}} viewport={{
+                    once:true,
+                  }}
+                required  className='forminput'type='text' placeholder='Subject'></motion.input>
+                <motion.textarea initial={{y:100, opacity:0}} whileInView={{y:0,opacity:1}} transition={{delay:0.6,duration:0.8}} viewport={{
+                    once:true,
+                  }}  required type='text' placeholder='Your Message'></motion.textarea>
+                <motion.button initial={{ opacity:0}} whileInView={{opacity:1}} transition={{delay:0.8,duration:0.8}} viewport={{
+                    once:true,
+                  }}className='submitbtn'>Submit</motion.button>
             </form>
         </div>
     </div>
