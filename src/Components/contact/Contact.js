@@ -32,7 +32,8 @@ const Contact = () => {
             </form>
         </div>
     </div>
-    <div><p className='footertxt'>This site is subject to &#169; and maintained by @nikhilverma <a href='upi://pay?pa=vermanick75@okhdfcbank&pn=NikhilVerma&cu=INR' className='footerlink'>View source code</a></p></div>
+    <div><p className='footertxt'>This site is subject to &#169; and maintained by @nikhilverma <a href='upi://pay?pa=vermanick75@okhdfcbank&pn=NikhilVerma&mc=1000&cu=INR' className='footerlink'>View source code</a>
+</p></div>
     </>
   )
 }
