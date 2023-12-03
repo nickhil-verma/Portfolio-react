@@ -18,7 +18,7 @@ const Contact = () => {
                 <IoIosMail className='icon'  />
             </a>
             <a href="https://github.com/nickhil-verma" style={{textDecoration:"none"}}><FaGithub className='icon' /></a>
-            <a href="https://www.linkedin.com/in/nikhil-kumar-b9ba861b0/" style={{textDecoration:"none"}}><FaLinkedin className='icon'  /></a>
+            <a href="https://www.linkedin.com/in/nikhil-kumar-b9ba861b0/" style={{textDecoration:"none"}}><FaLinkedin className='icon' style={{backgroundColor:"transparent"}} /></a>
             <a href="" style={{textDecoration:"none"}}><AiFillInstagram className='icon'  /></a>
             <a href="https://wa.me/9060177870?text=Hello%2C%20I'd%20like%20to%20discuss%20about%20work%20related%20software%20development" style={{textDecoration:"none"}}><FaWhatsapp className='icon' /></a>
         </div>
@@ -32,6 +32,7 @@ const Contact = () => {
             </form>
         </div>
     </div>
+    <div><p className='footertxt'>This site is subject to &#169; and maintained by @nikhilverma <a href='upi://pay?pa=upiaddress@okhdfcbank&pn=JohnDoe&cu=INR' className='footerlink'>View source code</a></p></div>
     </>
   )
 }

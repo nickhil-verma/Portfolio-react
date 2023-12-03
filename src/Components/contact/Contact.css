@@ -83,9 +83,21 @@ textarea:hover{
 .icon{
     font-size: 25px;
     margin: 10px;
+    color: black;
+    background-color: transparent;
 }
 
 .icon:hover{
     scale: 1.25;
     transition: 0.5s;
+}
+.footertxt{
+    font-size: .8rem;
+    text-align: center;
+    color: rgba(162, 162, 162, 0.418)
+}
+.footerlink{
+    color: rgb(22, 22, 237);
+    text-decoration: underline;
+    cursor: pointer;
 }

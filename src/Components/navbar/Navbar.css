@@ -45,7 +45,7 @@
         margin-top: 0;
     }
     .navbar{
-        background: rgba(182, 182, 182, 0); 
+        background: rgba(182, 182, 182, 0.267); 
         backdrop-filter: blur(0px); }
   }
   @media only screen and (min-width: 700px) {
@@ -75,7 +75,7 @@
     right: 0;
     width: 50%;
     height: 100%;
-    background: rgba(182, 182, 182, 0.777); 
+    background: rgba(98, 98, 98, 0.568); 
     backdrop-filter: blur(10px); 
     color: white;
     padding: 20px;

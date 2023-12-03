@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import "./Navbar.css";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Logo from "../../img/84511.png";
-
+import { IoIosMail } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 const Navbar = () => {
   
@@ -45,6 +49,15 @@ const Navbar = () => {
                         <ScrollLink to="Contact" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >contact</ScrollLink>
                     </li>
                 </ul>
+                <div style={{backgroundColor:"transparent",display:"flex",}}>
+                <a style={{textDecoration:"none",backgroundColor:"transparent"}}href="mailto:vermanick75@gmail.com? subject=Got your email from portfolio">
+                <IoIosMail className='icon'  />
+            </a>
+            <a href="https://github.com/nickhil-verma" style={{textDecoration:"none",backgroundColor:"transparent"}}><FaGithub className='icon' /></a>
+            <a href="https://www.linkedin.com/in/nikhil-kumar-b9ba861b0/" style={{textDecoration:"none"}}><FaLinkedin className='icon'  /></a>
+            <a href="" style={{textDecoration:"none",backgroundColor:"transparent"}}><AiFillInstagram className='icon'  /></a>
+            <a href="https://wa.me/9060177870?text=Hello%2C%20I'd%20like%20to%20discuss%20about%20work%20related%20software%20development" style={{textDecoration:"none",backgroundColor:"transparent"}}><FaWhatsapp className='icon' /></a>
+                </div>
       </div>
     )}
   </div>
