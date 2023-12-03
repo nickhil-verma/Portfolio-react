@@ -66,3 +66,15 @@ textarea:hover{
 #contact-span{
     color: rgb(255, 166, 0);
 }
+@media only screen and (max-width: 700px) {
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .input .forminput{
+        
+        width: 100%;
+    }
+}
