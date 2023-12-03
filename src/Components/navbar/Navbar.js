@@ -77,7 +77,6 @@ const Navbar = () => {
             ☰
             {isPopupVisible && (
         <div className="popup">
-            <div className='btnholder'> <button className="closebtn"onClick={handleButtonClick}>X</button></div>
            
          
         </div>
