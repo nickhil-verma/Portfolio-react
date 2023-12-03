@@ -24,7 +24,7 @@ import VSCODE from "../../img/vscode.png";
 const Skills = () => {
   return (
     <div className='skills-section' id='skills'>
-        <h1 className='skillsheading'>SKILLS</h1>
+        <h1 className='skillsheading sectionheading'>SKILLS</h1>
         <p className='subheading-skills'>To be Noted this was updated last in Dec 2023</p>
         <div className='imgholder'>
            <div className='imgcontainer'><img  id='skills-logo' src={HTML}></img><h3>Html</h3><p>90%</p><div className='barholder'><div className='progressbar html'></div></div></div>

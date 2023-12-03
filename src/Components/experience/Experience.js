@@ -5,7 +5,7 @@ import Github from "../../img/osc.png"
 const Experience = () => {
   return (
     <>
-    <h1 className='Expheading' >Experience</h1>
+    <h1 className='Expheading sectionheading' >Experience</h1>
     <div id="Experience"className='expcontainer'>
     <div className='Experience-holder'>
         <div className='experience-card'>

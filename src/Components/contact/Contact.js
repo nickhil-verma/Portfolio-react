@@ -2,12 +2,12 @@ import React from 'react'
 import "./Contact.css"
 const Contact = () => {
   return (<>
-        <h1 className='contact-heading'>Contact</h1>
+        <h1 className='contact-heading sectionheading'>Contact</h1>
     <div id="Contact" className='contact-container'>
         
         <div className='contact-txt'>
-        <h3>I have got just what you need.<br></br>
-        Lets Talk</h3></div>
+        <h3>I have got just what you need.<br></br><span id='contact-span'>
+        Lets Talk!</span></h3></div>
         <div className='contact-form'>
             <form>
                 <div className='input holder'><input className='forminput' type='text' placeholder='Name'></input>
