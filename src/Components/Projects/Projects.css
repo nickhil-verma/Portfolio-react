@@ -171,3 +171,9 @@ h1:hover{
         flex-direction: column;
     }
 }
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: white;
+  }

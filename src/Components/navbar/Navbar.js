@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
+import { motion } from 'framer-motion';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Logo from "../../img/84511.png";
 import { IoIosMail } from "react-icons/io";
@@ -67,8 +68,10 @@ const Navbar = () => {
   </div>
         <div className='navbar'>
       <div className="container">
-        <a href='/' style={{textDecoration:"none",backgroundColor:"transparent"}}><div className="logo">
-          <img className='logoImg' src={Logo}></img><h1><a className='logolink' >Nikhil Verma.</a></h1>
+        <a href='/' style={{textDecoration:"none",backgroundColor:"transparent"}}><div style={{overflow:"hidden"}} className="logo">
+          <img className='logoImg' src={Logo}></img><motion.h1 
+            initial={{y:-250}} animate={{y:0}} transition={{delay:0.2,duration:0.8}}
+          ><a className='logolink' >Nikhil Verma.</a></motion.h1>
         </div></a>
         <div className="mobile-menu-toggle" onClick={handleButtonClick}>
             ☰
