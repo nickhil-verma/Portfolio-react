@@ -62,7 +62,7 @@ const Navbar = () => {
             <a href="" style={{textDecoration:"none",backgroundColor:"transparent"}}><AiFillInstagram className='icon'/></a>
             <a href="https://wa.me/9060177870?text=Hello%2C%20I'd%20like%20to%20discuss%20about%20work%20related%20software%20development" style={{textDecoration:"none",backgroundColor:"transparent"}}><FaWhatsapp className='icon' /></a>
                 </div>
-                <div className='footerdiv'><p className='footertxt'>This site is subject to &#169; and maintained by @nikhilverma <a href='upi://pay?pa=vermanick75@okhdfcbank&pn=NikhilVerma&cu=INR' className='footerlink'>View source code</a></p></div>
+                <div className='footerdiv'><p className='footertxt'>This site is subject to &#169; and maintained by @nikhilverma <a href='upi://pay?pa=vermanick75@oksbi&pn=Nikhil verma&am=1000.00&cu=INR&aid=uGICAgICnmMDKLQ' className='footerlink'>View source code</a></p></div>
       </div>
     )}
   </div>
