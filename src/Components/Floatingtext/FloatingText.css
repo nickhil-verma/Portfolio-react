@@ -5,14 +5,14 @@
     color: #fff;
     border: solid grey 1px;
     border-bottom: none;
-    border-radius: 10px;
+    border-radius:10px 10px 0 0  ;
     padding: 8px;
     padding-top: 3px;
     cursor: pointer;
     height: 20px;
     top: 250px;
     left: -40px;
-    background: rgba(3, 3, 3, 0.25); 
+    background: rgba(146, 146, 146, 0.25); 
     backdrop-filter: blur(10px); 
     overflow: hidden;
     position: fixed;
