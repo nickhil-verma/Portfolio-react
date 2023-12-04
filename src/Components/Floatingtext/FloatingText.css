@@ -19,6 +19,10 @@
     position: fixed;
 
   }
+  .clickable-div:hover{
+    scale: 1.08;
+    transition: 0.3s;
+  }
 
   .blogs{
     top: 350px;
