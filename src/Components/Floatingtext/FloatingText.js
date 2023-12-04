@@ -42,10 +42,10 @@ const FloatingText = () => {
         {isBlogsPopupVisible && (
           <div className="popup-overlay" onClick={handlePopupClose}>
             <motion.div 
-            initial={{ opacity:0,scale:0}} whileInView={{opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
+            initial={{ x:-300,opacity:0,scale:0.5}} whileInView={{x:0,opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
                 once:true,}}
                 className="popup-content" onClick={(e) => e.stopPropagation()}>
-              <div className='clsbtnhlder'><button className='popupclsbtn' onClick={handlePopupClose}>X</button></div>
+              <div className='clsbtnhlder'><button className='popupclsbtn' onClick={handlePopupClose}>&times;</button></div>
               <p>Blogs popup content goes here!</p>
             </motion.div>
           </div>
@@ -59,10 +59,10 @@ const FloatingText = () => {
         {isEducationPopupVisible && (
           <div className="popup-overlay" onClick={handlePopupClose}>
             <motion.div
-            initial={{ opacity:0,scale:0}} whileInView={{opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
+            initial={{ x:-300,opacity:0,scale:0.5}} whileInView={{x:0,opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
                 once:true,}}
             className="popup-content" onClick={(e) => e.stopPropagation()}>
-              <div className='clsbtnhlder'><button className='popupclsbtn' onClick={handlePopupClose}>X</button></div>
+              <div className='clsbtnhlder'><button className='popupclsbtn' onClick={handlePopupClose}>&times;</button></div>
               <div className='circle'><h3>BORN 2004</h3></div>
                     <div className="timelinecontainer">
                         

@@ -10,6 +10,7 @@
     padding-top: 3px;
     cursor: pointer;
     height: 20px;
+    font-weight: 300;
     top: 250px;
     left: -40px;
     background: rgba(146, 146, 146, 0.25); 
@@ -74,7 +75,8 @@
     align-items: end;
     margin-right: 0;
     font-size: 30px;
-    color: white;
+    color: grey;
+    font-weight: 200;
     background-color: transparent;
     
   }
