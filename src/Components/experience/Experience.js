@@ -23,7 +23,7 @@ const Experience = () => {
             </h3>
             <ul className='explist'>
                   <li>
-                    ⚪ worked as  freelancer 
+                    ⚪ workes as  freelancer 
                   </li>
                   <li>
                     ⚪ Contributes for JS repos
