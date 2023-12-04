@@ -144,6 +144,11 @@ h1:hover{
     overflow: hidden;
     border-radius: 8px; /* Optional: Add rounded corners */
 }
+.projectcard:hover{
+    scale: 1.05;
+    transition: 0.3s;
+    
+}
 
 .projectcard::before {
     content: '';

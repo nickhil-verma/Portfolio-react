@@ -109,3 +109,8 @@ textarea:hover{
 .footerdiv{
     background-color: transparent;
 }
+.submit-msg{
+    color: greenyellow;
+    font-size: .8rem;
+    text-align: center;
+}

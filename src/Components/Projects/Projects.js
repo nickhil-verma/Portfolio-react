@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import IG from "../../img/IG.png"
 import "./Projects.css";
+import BITT from "../../img/BITT.png"
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { IoOpenSharp } from "react-icons/io5";
@@ -35,16 +36,24 @@ const Projects = () => {
                   once:true,
                 }}
               className='projectcard'>
-                <h3>Heaading</h3>
-                <p>caption ..............caption..............caption............caption...............caption</p>
+                <img className='thumbnail' src={BITT}></img>
+                <h3>An organization webpage</h3>
+                <p>Tech stack:- 
+                <FaReact  className='icon' /> &nbsp;
+                <IoLogoJavascript  className='icon'/></p>
+                <a  style={{backgroundColor:"transparent"}}href='/'>View Source code</a>
+                <p>
+                  <a style={{backgroundColor:"transparent"}} href="https://bittdumka.netlify.app/://instalinksnikkhiilverma.netlify.app/"><IoOpenSharp className='icon'/></a>
+                   &nbsp;
+                  <a style={{backgroundColor:"transparent"}}href='/'><FaGithub  className='icon' /></a></p>
               </motion.div>
               <motion.div 
                 initial={{x:-100 , opacity:0} } whileInView={{x:0,opacity:1}} transition={{delay:0.2,duration:0.8}} viewport={{
                   once:true,
                 }}
               className='projectcard'>
-                <h3>Heaading</h3>
-                <p>caption ..............caption..............caption............caption...............caption</p>
+                <h3>Heading</h3>
+                <p>caption </p>
               </motion.div>
                  
         </div>

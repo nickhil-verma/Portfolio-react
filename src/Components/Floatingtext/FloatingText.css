@@ -145,6 +145,7 @@
   
   .timeline-content p {
     font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
     line-height: 30px;
     background-color: #1e1f22;
     font-weight: 300;
@@ -253,5 +254,24 @@
   @media only screen and (max-width: 768px) {
     .circle{
         display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .popup-content {
+      width: 80%; /* Adjust the width for smaller screens */
+      height: 70%; /* Adjust the height for smaller screens */
+    }
+    .timeline{
+        width: 100%;
+        
+       
+    }
+    .timelinecontainer{
+        padding: 0;
+    }
+
+    .timeline ul{
+        padding: 0;
     }
   }

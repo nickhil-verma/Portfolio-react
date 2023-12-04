@@ -42,7 +42,7 @@ const FloatingText = () => {
         {isBlogsPopupVisible && (
           <div className="popup-overlay" onClick={handlePopupClose}>
             <motion.div 
-            initial={{ x:-300,opacity:0,scale:0.5}} whileInView={{x:0,opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
+            initial={{ opacity:0,scale:0.5}} whileInView={{opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
                 once:true,}}
                 className="popup-content" onClick={(e) => e.stopPropagation()}>
               <div className='clsbtnhlder'><button className='popupclsbtn' onClick={handlePopupClose}>&times;</button></div>
@@ -59,7 +59,7 @@ const FloatingText = () => {
         {isEducationPopupVisible && (
           <div className="popup-overlay" onClick={handlePopupClose}>
             <motion.div
-            initial={{ x:-300,opacity:0,scale:0.5}} whileInView={{x:0,opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
+            initial={{ opacity:0,scale:0.5}} whileInView={{opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
                 once:true,}}
             className="popup-content" onClick={(e) => e.stopPropagation()}>
               <div className='clsbtnhlder'><button className='popupclsbtn' onClick={handlePopupClose}>&times;</button></div>
@@ -91,7 +91,7 @@ const FloatingText = () => {
                                         <h3 className="date">2023</h3>
                                         <h1>JEE mains and Advanced</h1>
                                         <p>
-                                           94%ile ine jee mains and 35k rank in JEE adv
+                                           94%ile in jee mains and 35k rank in JEE adv
                                         </p>
                                         </div>
                                     </li>

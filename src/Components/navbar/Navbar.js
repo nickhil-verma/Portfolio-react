@@ -10,7 +10,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 
 const Navbar = () => {
-  
+    
     // const [isPopupVisible, setPopupVisible] = useState(false);
 
     // const handleButtonClick = () => {

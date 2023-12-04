@@ -5,8 +5,34 @@ import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { motion } from 'framer-motion';
+import { useRef } from 'react';
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import "./Contact.css"
 const Contact = () => {
+
+    const form = useRef();
+    const [done, setDone] = useState(false)
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm(
+          "service_xxomne7",
+          "template_h4sh03m",
+          form.current,
+          "i6Aaq5I0OEyQLqAPi"
+        )
+        .then((result) => {
+          console.log('Email sent successfully:', result.text)
+          form.current.reset();
+          setDone(true);
+          console.log('email sent sucessfully');  
+        })
+        .catch((error) => {
+          console.error('Email not sent:', error);
+        });
+    };
   return (<>
         <h1 className='contact-heading sectionheading'>Contact</h1>
     <div id="Contact" className='contact-container'>
@@ -22,33 +48,34 @@ const Contact = () => {
             <a href="" style={{textDecoration:"none"}}><AiFillInstagram className='icon'  /></a>
             <a href="https://wa.me/9060177870?text=Hyy!%20Nikhil." style={{textDecoration:"none"}}><FaWhatsapp className='icon' /></a>
         </div>
-        <div className='contact-form'>
-            <form>
+        <div className='contact-form' >
+            <form ref={form} onSubmit={sendEmail}>
                 <div className='input holder'><motion.input
                  initial={{x:-100, opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.4,duration:0.8}} viewport={{
                 once:true,
               }}
-                required className='forminput' type='text' placeholder='Name'></motion.input>
+                required className='forminput' name="user_name" type='text' placeholder='Name'></motion.input>
                 <motion.input 
                  initial={{x:100, opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.4,duration:0.8}} viewport={{
                 once:true,
               }}
-                 required className='forminput' type='email' placeholder='Email@example.com'></motion.input></div>
+                 required className='forminput' name="user_email" type='email' placeholder='Email@example.com'></motion.input></div>
                 <motion.input 
                 initial={{y:100, opacity:0}} whileInView={{y:0,opacity:1}} transition={{delay:0.6,duration:0.8}} viewport={{
                     once:true,
                   }}
-                  className='forminput'type='text' placeholder='Subject'></motion.input>
+                  className='forminput'type='text' name="mobno" placeholder='Subject'></motion.input>
                 <motion.textarea initial={{y:100, opacity:0}} whileInView={{y:0,opacity:1}} transition={{delay:0.7,duration:0.8}} viewport={{
                     once:true,
-                  }}  required type='text' placeholder='Your Message'></motion.textarea>
+                  }}  required type='text' name="message" placeholder='Your Message'></motion.textarea>
+                  <span className="submit-msg">{done && "Message Sent. Confirmation is sent to your mail"}</span>
                 <motion.button initial={{ opacity:0}} whileInView={{opacity:1}} transition={{delay:0.8,duration:0.8}} viewport={{
                     once:true,
-                  }}className='submitbtn'>Submit</motion.button>
+                  }}className='submitbtn' value="Send">Submit</motion.button>
             </form>
         </div>
     </div>
-    <div><p className='footertxt'>This site is subject to &#169; and maintained by @nikhilverma <a href='upi://pay?pa=vermanick75@oksbi&pn=Nikhil verma&am=1000.00&cu=INR&aid=uGICAgICnmMDKLQ' className='footerlink'>View source code</a>
+    <div><p className='footertxt'>This site is subject to &#169;2023 and maintained by @nikhilverma <a href='upi://pay?pa=vermanick75@oksbi&pn=Nikhil verma&am=1000.00&cu=INR&aid=uGICAgICnmMDKLQ' className='footerlink'>View source code</a>
 </p></div>
     </>
   )
