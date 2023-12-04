@@ -7,6 +7,7 @@ import Skills from './Components/skills/Skills.js'
 import Projects from './Components/Projects/Projects.js';
 import Experience from './Components/experience/Experience.js';
 import Contact from './Components/contact/Contact.js';
+import FloatingText from './Components/Floatingtext/FloatingText.js';
 function App() {
   const [progress, setProgress] = useState(0)
   return (
@@ -16,6 +17,7 @@ function App() {
     <Skills/>
     <Projects/>
     <Experience/>
+    <FloatingText/>
     <Contact/>
      </>
   );

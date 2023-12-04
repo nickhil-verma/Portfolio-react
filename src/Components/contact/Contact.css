@@ -51,6 +51,7 @@ textarea{
 .submitbtn{
     border: solid grey 1px;
     color: grey;
+    z-index: 1;
 }
 .submitbtn:hover{
     border: solid grey 1px;

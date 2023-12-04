@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Logo from "../../img/84511.png";
 import { IoIosMail } from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
+import { ImLinkedin } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
@@ -50,16 +50,16 @@ const Navbar = () => {
                         <ScrollLink to="Contact" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >contact</ScrollLink>
                     </motion.li>
                     <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.6,duration:0.8}}>
-                      <a style={{textDecoration:"none"}} href='upi://pay?pa=vermanick75@okhdfcbank&pn=NikhilVerma&mc=1000&cu=INR'><button className='navbtn'>Buy me a coffee☕</button></a>
+                      <a style={{textDecoration:"none"}} href='upi://pay?pa=vermanick75@oksbi&pn=Nikhil verma&am=1000.00&cu=INR&aid=uGICAgICnmMDKLQ'><button className='navbtn'>Buy me a coffee☕</button></a>
                    </motion.li>
                 </ul>
                 <div style={{backgroundColor:"transparent",display:"flex",}}>
                 <a style={{textDecoration:"none",backgroundColor:"transparent"}}href="mailto:vermanick75@gmail.com? subject=Got your email from portfolio">
-                <IoIosMail className='icon'  />
+                <IoIosMail className='icon' style={{backgroundColor:"transparent"}} />
             </a>
             <a href="https://github.com/nickhil-verma" style={{textDecoration:"none",backgroundColor:"transparent"}}><FaGithub className='icon' /></a>
-            <a href="https://www.linkedin.com/in/nikhil-kumar-b9ba861b0/" style={{textDecoration:"none"}}><FaLinkedin className='icon'  /></a>
-            <a href="" style={{textDecoration:"none",backgroundColor:"transparent"}}><AiFillInstagram className='icon'  /></a>
+            <a href="https://www.linkedin.com/in/nikhil-kumar-b9ba861b0/" style={{textDecoration:"none",backgroundColor:"transparent"}}><ImLinkedin  className='icon' style={{Color:"red"}}  /></a>
+            <a href="" style={{textDecoration:"none",backgroundColor:"transparent"}}><AiFillInstagram className='icon'/></a>
             <a href="https://wa.me/9060177870?text=Hello%2C%20I'd%20like%20to%20discuss%20about%20work%20related%20software%20development" style={{textDecoration:"none",backgroundColor:"transparent"}}><FaWhatsapp className='icon' /></a>
                 </div>
                 <div className='footerdiv'><p className='footertxt'>This site is subject to &#169; and maintained by @nikhilverma <a href='upi://pay?pa=vermanick75@okhdfcbank&pn=NikhilVerma&cu=INR' className='footerlink'>View source code</a></p></div>
