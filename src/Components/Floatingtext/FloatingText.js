@@ -42,7 +42,7 @@ const FloatingText = () => {
         {isBlogsPopupVisible && (
           <div className="popup-overlay" onClick={handlePopupClose}>
             <motion.div 
-            initial={{ opacity:0,scale:0.5}} whileInView={{opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
+            initial={{ opacity:0,scale:0.5}} whileInView={{opacity:1,scale:1}} transition={{delay:0.1,duration:0.15}} viewport={{
                 once:true,}}
                 className="popup-content" onClick={(e) => e.stopPropagation()}>
               <div className='clsbtnhlder'><button className='popupclsbtn' onClick={handlePopupClose}>&times;</button></div>
@@ -59,7 +59,7 @@ const FloatingText = () => {
         {isEducationPopupVisible && (
           <div className="popup-overlay" onClick={handlePopupClose}>
             <motion.div
-            initial={{ opacity:0,scale:0.5}} whileInView={{opacity:1,scale:1}} transition={{delay:0.1,duration:0.3}} viewport={{
+            initial={{ opacity:0,scale:0.5}} whileInView={{opacity:1,scale:1}} transition={{delay:0.1,duration:0.15}} viewport={{
                 once:true,}}
             className="popup-content" onClick={(e) => e.stopPropagation()}>
               <div className='clsbtnhlder'><button className='popupclsbtn' onClick={handlePopupClose}>&times;</button></div>
