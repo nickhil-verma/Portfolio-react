@@ -31,13 +31,13 @@
     color:grey;}
 
 
-textarea{
+.textarea{
   
         border: none;
         padding: 10px;
         border-bottom: solid 2px white;
         background: rgba(182, 182, 182, 0.195); 
-    backdrop-filter: blur(10px); 
+        backdrop-filter: blur(10px); 
         color:white;
         border-bottom: soild 1px white;
         margin: 2PX;

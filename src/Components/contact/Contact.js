@@ -65,7 +65,7 @@ const Contact = () => {
                     once:true,
                   }}
                   className='forminput'type='text' name="mobno" placeholder='Subject'></motion.input>
-                <motion.textarea initial={{y:100, opacity:0}} whileInView={{y:0,opacity:1}} transition={{delay:0.7,duration:0.8}} viewport={{
+                <motion.textarea className='textarea' initial={{y:100, opacity:0}} whileInView={{y:0,opacity:1}} transition={{delay:0.7,duration:0.8}} viewport={{
                     once:true,
                   }}  required type='text' name="message" placeholder='Your Message'></motion.textarea>
                   <span className="submit-msg">{done && "Message Sent. Confirmation is sent to your mail"}</span>
