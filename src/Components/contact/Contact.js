@@ -45,7 +45,7 @@ const Contact = () => {
             </a>
             <a href="https://github.com/nickhil-verma" style={{textDecoration:"none"}}><FaGithub className='icon' /></a>
             <a href="https://www.linkedin.com/in/nikhil-kumar-b9ba861b0/" style={{textDecoration:"none"}}><FaLinkedin className='icon' style={{backgroundColor:"transparent"}} /></a>
-            <a href="" style={{textDecoration:"none"}}><AiFillInstagram className='icon'  /></a>
+            <a href="https://www.instagram.com/nikkhiil_verma/" style={{textDecoration:"none"}}><AiFillInstagram className='icon'  /></a>
             <a href="https://wa.me/9060177870?text=Hyy!%20Nikhil." style={{textDecoration:"none"}}><FaWhatsapp className='icon' /></a>
         </div>
         <div className='contact-form' >

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import IG from "../../img/IG.png"
+import SUDOKU from "../../img/Screenshot 2024-03-16 125315.png"
 import "./Projects.css";
 import BITT from "../../img/BITT.png"
 import { FaReact } from "react-icons/fa";
@@ -52,8 +53,11 @@ const Projects = () => {
                   once:true,
                 }}
               className='projectcard'>
-                <h3>Heading</h3>
-                <p>caption </p>
+                  <img className='thumbnail' src={SUDOKU}></img>
+                <h3>Sudoku Solver</h3>
+                <p>Project based On Data structure and algorithm </p>
+                <a  style={{backgroundColor:"transparent"}}href='https://github.com/nickhil-verma/Sudoku_solver'>View Source code</a>
+                <a style={{backgroundColor:"transparent"}}href='https://github.com/nickhil-verma/Sudoku_solver'><FaGithub  className='icon' /></a>
               </motion.div>
                  
         </div>
