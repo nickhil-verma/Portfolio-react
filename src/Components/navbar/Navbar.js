@@ -50,7 +50,7 @@ const Navbar = () => {
                         <ScrollLink to="Contact" smooth={true} duration={100} offset={-50} className='navLinks-mobile' >contact</ScrollLink>
                     </motion.li>
                     <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.6,duration:0.8}}>
-                      <a style={{textDecoration:"none"}} href='upi://pay?pa=vermanick75@oksbi&pn=Nikhil verma&am=1000.00&cu=INR&aid=uGICAgICnmMDKLQ'><button className='navbtn'>Buy me a coffee☕</button></a>
+                      <a style={{textDecoration:"none"}} href='https://payementgateway-nikhilverma.netlify.app/'><button className='navbtn'>Buy me a coffee☕</button></a>
                    </motion.li>
                 </ul>
                 <div style={{backgroundColor:"transparent",display:"flex",}}>
@@ -102,7 +102,7 @@ const Navbar = () => {
                         <ScrollLink to="Contact" smooth={true} duration={100} offset={-50} className='navLinks' >contact</ScrollLink>
                     </li>
                     <li>
-                      <a style={{textDecoration:"none"}} href='upi://pay?pa=vermanick75@okhdfcbank&pn=NikhilVerma&mc=1000&cu=INR'><button className='navbtn'>Buy me a coffee☕</button></a>
+                      <a style={{textDecoration:"none"}} href='https://payementgateway-nikhilverma.netlify.app/'><button className='navbtn'>Buy me a coffee☕</button></a>
                    </li>
                 </ul>
             </div>
